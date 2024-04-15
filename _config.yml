@@ -1,0 +1,9 @@
+title: LevelZ File Format
+description: >
+  Human-Readable Level File Format, designed by Calculus Games
+
+baseurl: ""
+url: "https://levelz.calcugames.xyz"
+github_username: CalculusGames
+
+markdown: kramdown
