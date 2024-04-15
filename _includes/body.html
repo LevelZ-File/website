@@ -1,0 +1,85 @@
+<!-- INTRO -->
+
+<div class="box">
+    <img src="/favicon.png" alt="LevelZ Logo" id="logo" />
+    <h1>LevelZ File Format</h1>
+
+    <div class="links">
+        {% for link in site.data.links %}
+            <a href="{{ link.url }}" title="{{ link.title }}" target="_blank">
+                <img src="/assets/{{ link.img }}" alt="{{ link.title }}" class="link-img" />
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- /INTRO -->
+
+<!-- FEATURES -->
+
+<h1 class="section">Features</h1>
+
+<div class="feature feature-right">
+    <div>
+        <h1>Simple.</h1>
+        <p>Easily create your own levels using a human-readable file format.</p>
+    </div>
+
+    <div>
+        <pre>
+            <code class="highlight">
+                <span class="h">@type</span>&nbsp;<span class="n">2</span>
+                <span class="h">@spawn</span>&nbsp;<span class="c">[0, 0]</span>
+                <span>---</span>
+                <span class="b">grass:</span>&nbsp;<span class="c">[0, -1]</span><span class="o">*</span><span class="c">[1, -1]</span><span class="o">*</span><span class="c">[2, -1]</span>
+                <span class="b">stone:</span>&nbsp;<span class="c">[0, -2]</span><span class="o">*</span><span class="c">[1, -2]</span><span class="o">*</span><span class="c">[2, -2]</span>
+                <span class="e">end</span>
+            </code>
+        </pre>
+    </div>
+</div>
+
+<div class="feature feature-left">
+    <div>
+        <pre>
+            <code class="highlight">
+                <span class="h">@type</span>&nbsp;<span class="n">3</span>
+                <span class="h">@spawn</span>&nbsp;<span class="c">[0, 0, 0]</span>
+                <span class="h">@time</span>&nbsp;<span class="n">120</span>
+                <span>---</span>
+                <span class="b">basalt:</span>&nbsp;<span class="c">(-10, 10, 0, 0, -10, 10)</span><span class="o">^</span><span class="c">[0, 0, 0]</span>
+                <span class="b">magma:</span>&nbsp;<span class="c">(-10, 10, -2, 0, -10, 10)</span><span class="o">*</span><span class="c">[0, -1, 0]</span>
+                <span class="e">end</span>
+            </code>
+        </pre>
+    </div>
+
+    <div>
+        <h1>Efficient.</h1>
+        <p>Reduce storing inefficient and unnecessary information to keep your games as quick as possible. LevelZ</p>
+    </div>
+</div>
+
+<div class="feature feature-right">
+    <div>
+        <h1>Portable.</h1>
+        <p>Official Bindings are available in JavaScript, C++, Java, and more to come! Port LevelZ into nearly any language you can think of.</p>
+    </div>
+
+    <div>
+        <pre>
+            <code class="highlight">
+                <span class="h">@type</span>&nbsp;<span class="n">2</span>
+                <span class="h">@spawn</span>&nbsp;<span class="c">[0, 0]</span>
+                <span class="h">@scroll</span>&nbsp;<span class="c">horizontal-right</span>
+                <span>---</span>
+                <span class="b">grass:</span>&nbsp;<span class="c">(0, 100, 0, 0)</span><span class="o">^</span><span class="c">[0, -1]</span>
+                <span class="b">dirt:</span>&nbsp;<span class="c">(0, 100, -1, 0)</span><span class="o">^</span><span class="c">[0, -2]</span>
+                <span class="b">stone:</span>&nbsp;<span class="c">(0, 100, -2, 0)</span><span class="o">^</span><span class="c">[0, -3]</span>
+                <span class="e">end</span>
+            </code>
+        </pre>
+    </div>
+</div>
+
+<!-- /FEATURES -->
