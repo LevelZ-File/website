@@ -1,23 +1,31 @@
 <!-- INTRO -->
 
 <div class="box">
-    <img src="/favicon.png" alt="LevelZ Logo" id="logo" />
-    <h1>LevelZ File Format</h1>
+    <img src="/favicon.png" alt="LevelZ Logo" id="logo" title="{{ site.title }}" />
+    <h1>{{ site.title }}</h1>
 
     <div class="links">
         {% for link in site.data.links %}
             <a href="{{ link.url }}" title="{{ link.title }}" target="_blank">
-                <img src="/assets/{{ link.img }}" alt="{{ link.title }}" class="link-img" />
+                <img src="/assets/{{ link.img }}" alt="{{ link.title }}" class="link-img" title="{{ link.title }}" />
             </a>
         {% endfor %}
     </div>
+</div>
+
+<p class="break"></p>
+
+<h1 class="section" id="introduction">Introduction</h1>
+
+<div class="box dark">
+    <p>{{ page.intro }}</p>
 </div>
 
 <!-- /INTRO -->
 
 <!-- FEATURES -->
 
-<h1 class="section">Features</h1>
+<h1 class="section" id="features">Features</h1>
 
 <div class="feature feature-right">
     <div>
@@ -63,7 +71,7 @@
 <div class="feature feature-right">
     <div>
         <h1>Portable.</h1>
-        <p>Official Bindings are available in JavaScript, C++, Java, and more to come! Port LevelZ into nearly any language you can think of.</p>
+        <p>Official Bindings are available in JavaScript, C++, Java, and more to come! Port LevelZ into nearly any language you can think of. Designed with Portability in mind.</p>
     </div>
 
     <div>
@@ -83,3 +91,29 @@
 </div>
 
 <!-- /FEATURES -->
+
+<!-- LEARN MORE -->
+
+<h1 class="section" id="learn-more">Learn More</h1>
+
+<div class="box dark">
+    <p>{{ page.learn_more }}</p>
+</div>
+
+<!-- /LEARN MORE -->
+
+<!-- FOOTER -->
+<footer>
+    <div style="display: flex; flex-direction: row; column-gap: 0.5vw; align-items: center">
+        <a href="https://calcugames.xyz" title="Calculus Games Homepage" target="_blank">Calculus Games</a>
+        <p>•</p>
+        <a href="https://github.com/LevelZ-File" title="LevelZ on GitHub" target="_blank">GitHub</a>
+        <p>•</p>
+        <a href="https://discord.com/invite/WDzuyqVwTX" title="LevelZ Discord" target="_blank">Discord</a>
+        <p>•</p>
+        <a href="https://docs.calcugames.xyz/levelz" title="LevelZ Documentation" target="_blank">Documentation</a>
+    </div>
+
+    <p>&copy; {{ site.title }} 2024. All Rights Reserved.</p>
+</footer>
+<!-- /FOOTER ->
