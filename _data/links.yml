@@ -4,3 +4,9 @@
 - name: Discord
   img: discord.png
   url: https://discord.com/invite/WDzuyqVwTX
+- name: Trello
+  img: trello.png
+  url: https://trello.com/b/d3FSdPwd/levelz
+- name: Documentation
+  img: docs.png
+  url: https://docs.calcugames.xyz/levelz
